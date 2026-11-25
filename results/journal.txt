@@ -1,0 +1,435 @@
+[Avertissement] extension non standard 'zrkt' interpretee comme ZRK : s05n011.zrkt.txt
+
+========================================================================
+  1.  Lecture des donnees : I:\rep_forme\ProjetRF\exemples\=Signatures
+========================================================================
+Echantillons : 216   classes : 18   echantillons par classe : 12
+  M^ART : dimension  36  (Transformee angulaire radiale (MPEG-7))
+  M^ZRK : dimension  18  (Moments de Zernike)
+  M^GFD : dimension 100  (Descripteur de Fourier generique)
+  M^YNG : dimension  29  (Signature structurelle de Yang)
+  M^SA  : dimension  20  (Signature angulaire (barycentre-contour + FFT))
+
+====================================================================
+  2.a  k plus proches voisins - 6 classes (72 echantillons), LOOCV
+====================================================================
+
+--- Grille T_reco pour M^ART (dim 36) : Transformee angulaire radiale (MPEG-7) ---
+k  | L1/aucune | L2/aucune | L1/zscore | L2/zscore
+---+-----------+-----------+-----------+----------
+1  |   100.00% |   100.00% |    98.61% |    98.61%
+3  |    98.61% |    98.61% |    98.61% |    98.61%
+5  |    98.61% |    98.61% |    98.61% |    98.61%
+7  |    98.61% |    97.22% |    97.22% |    95.83%
+9  |    97.22% |    95.83% |    97.22% |    97.22%
+11 |    97.22% |    95.83% |    97.22% |    94.44%
+
+--- Grille T_reco pour M^ZRK (dim 18) : Moments de Zernike ---
+k  | L1/aucune | L2/aucune | L1/zscore | L2/zscore
+---+-----------+-----------+-----------+----------
+1  |   100.00% |   100.00% |    98.61% |    97.22%
+3  |    98.61% |   100.00% |    97.22% |    97.22%
+5  |    98.61% |    98.61% |    97.22% |    95.83%
+7  |    98.61% |    97.22% |    94.44% |    97.22%
+9  |    97.22% |    95.83% |    94.44% |    95.83%
+11 |    95.83% |    95.83% |    94.44% |    94.44%
+
+--- Grille T_reco pour M^GFD (dim 100) : Descripteur de Fourier generique ---
+k  | L1/aucune | L2/aucune | L1/zscore | L2/zscore
+---+-----------+-----------+-----------+----------
+1  |   100.00% |   100.00% |    94.44% |    93.06%
+3  |   100.00% |    98.61% |    90.28% |    91.67%
+5  |   100.00% |    98.61% |    88.89% |    87.50%
+7  |    97.22% |    98.61% |    87.50% |    84.72%
+9  |    95.83% |    95.83% |    84.72% |    83.33%
+11 |    95.83% |    97.22% |    83.33% |    83.33%
+
+--- Grille T_reco pour M^YNG (dim 29) : Signature structurelle de Yang ---
+k  | L1/aucune | L2/aucune | L1/zscore | L2/zscore
+---+-----------+-----------+-----------+----------
+1  |    95.83% |    95.83% |    98.61% |    97.22%
+3  |    97.22% |    97.22% |    98.61% |    97.22%
+5  |    97.22% |    95.83% |    98.61% |    97.22%
+7  |    93.06% |    93.06% |    94.44% |    94.44%
+9  |    93.06% |    93.06% |    93.06% |    94.44%
+11 |    93.06% |    93.06% |    93.06% |    95.83%
+
+--- Grille T_reco pour M^SA (dim 20) : Signature angulaire (barycentre-contour + FFT) ---
+k  | L1/aucune | L2/aucune | L1/zscore | L2/zscore
+---+-----------+-----------+-----------+----------
+1  |    83.33% |    83.33% |    81.94% |    77.78%
+3  |    80.56% |    79.17% |    77.78% |    75.00%
+5  |    77.78% |    77.78% |    77.78% |    72.22%
+7  |    72.22% |    72.22% |    70.83% |    73.61%
+9  |    72.22% |    70.83% |    69.44% |    70.83%
+11 |    72.22% |    72.22% |    75.00% |    68.06%
+
+--- Configuration retenue M^ART : k=1,L1,AUCUNE ---
+verite\estimee |  S01 |  S02 |  S03 |  S04 |  S05 |  S06 |    R_i
+---------------+------+------+------+------+------+------+-------
+S01            |   12 |    . |    . |    . |    . |    . | 1.0000
+S02            |    . |   12 |    . |    . |    . |    . | 1.0000
+S03            |    . |    . |   12 |    . |    . |    . | 1.0000
+S04            |    . |    . |    . |   12 |    . |    . | 1.0000
+S05            |    . |    . |    . |    . |   12 |    . | 1.0000
+S06            |    . |    . |    . |    . |    . |   12 | 1.0000
+P_i            | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |       
+T_reco = 100.00%   T_conf = 0.00%   P_macro = 1.0000   R_macro = 1.0000   F1_macro = 1.0000
+
+--- Configuration retenue M^ZRK : k=1,L1,AUCUNE ---
+verite\estimee |  S01 |  S02 |  S03 |  S04 |  S05 |  S06 |    R_i
+---------------+------+------+------+------+------+------+-------
+S01            |   12 |    . |    . |    . |    . |    . | 1.0000
+S02            |    . |   12 |    . |    . |    . |    . | 1.0000
+S03            |    . |    . |   12 |    . |    . |    . | 1.0000
+S04            |    . |    . |    . |   12 |    . |    . | 1.0000
+S05            |    . |    . |    . |    . |   12 |    . | 1.0000
+S06            |    . |    . |    . |    . |    . |   12 | 1.0000
+P_i            | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |       
+T_reco = 100.00%   T_conf = 0.00%   P_macro = 1.0000   R_macro = 1.0000   F1_macro = 1.0000
+
+--- Configuration retenue M^GFD : k=1,L1,AUCUNE ---
+verite\estimee |  S01 |  S02 |  S03 |  S04 |  S05 |  S06 |    R_i
+---------------+------+------+------+------+------+------+-------
+S01            |   12 |    . |    . |    . |    . |    . | 1.0000
+S02            |    . |   12 |    . |    . |    . |    . | 1.0000
+S03            |    . |    . |   12 |    . |    . |    . | 1.0000
+S04            |    . |    . |    . |   12 |    . |    . | 1.0000
+S05            |    . |    . |    . |    . |   12 |    . | 1.0000
+S06            |    . |    . |    . |    . |    . |   12 | 1.0000
+P_i            | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |       
+T_reco = 100.00%   T_conf = 0.00%   P_macro = 1.0000   R_macro = 1.0000   F1_macro = 1.0000
+
+--- Configuration retenue M^YNG : k=1,L1,ZSCORE ---
+verite\estimee |  S01 |  S02 |  S03 |  S04 |  S05 |  S06 |    R_i
+---------------+------+------+------+------+------+------+-------
+S01            |   11 |    . |    . |    . |    1 |    . | 0.9167
+S02            |    . |   12 |    . |    . |    . |    . | 1.0000
+S03            |    . |    . |   12 |    . |    . |    . | 1.0000
+S04            |    . |    . |    . |   12 |    . |    . | 1.0000
+S05            |    . |    . |    . |    . |   12 |    . | 1.0000
+S06            |    . |    . |    . |    . |    . |   12 | 1.0000
+P_i            | 1.00 | 1.00 | 1.00 | 1.00 | 0.92 | 1.00 |       
+T_reco = 98.61%   T_conf = 1.39%   P_macro = 0.9872   R_macro = 0.9861   F1_macro = 0.9861
+
+--- Configuration retenue M^SA : k=1,L1,AUCUNE ---
+verite\estimee |  S01 |  S02 |  S03 |  S04 |  S05 |  S06 |    R_i
+---------------+------+------+------+------+------+------+-------
+S01            |    9 |    . |    . |    3 |    . |    . | 0.7500
+S02            |    . |   12 |    . |    . |    . |    . | 1.0000
+S03            |    . |    . |    9 |    . |    3 |    . | 0.7500
+S04            |    3 |    . |    . |    7 |    2 |    . | 0.5833
+S05            |    . |    . |    1 |    . |   11 |    . | 0.9167
+S06            |    . |    . |    . |    . |    . |   12 | 1.0000
+P_i            | 0.75 | 1.00 | 0.90 | 0.70 | 0.69 | 1.00 |       
+T_reco = 83.33%   T_conf = 16.67%   P_macro = 0.8396   R_macro = 0.8333   F1_macro = 0.8317
+
+--- Resume k-PPV (configurations retenues) ---
+methode |      config |  T_reco | P_macro | R_macro | F1_macro
+--------+-------------+---------+---------+---------+---------
+ART     | 1,L1,AUCUNE | 100.00% |  1.0000 |  1.0000 |   1.0000
+ZRK     | 1,L1,AUCUNE | 100.00% |  1.0000 |  1.0000 |   1.0000
+GFD     | 1,L1,AUCUNE | 100.00% |  1.0000 |  1.0000 |   1.0000
+YNG     | 1,L1,ZSCORE |  98.61% |  0.9872 |  0.9861 |   0.9861
+SA      | 1,L1,AUCUNE |  83.33% |  0.8396 |  0.8333 |   0.8317
+
+--- Influence du protocole de decoupage (k-PPV, configurations retenues) ---
+approche |          protocole | n_app |  T_reco | ecart-type |         min - max |  ms
+---------+--------------------+-------+---------+------------+-------------------+----
+kPPV-ART |              LOOCV |    71 | 100.00% |      0.00% | 100.00% - 100.00% | 2.3
+kPPV-ART | 12-plis strat. x10 |    66 | 100.00% |      0.00% | 100.00% - 100.00% | 1.3
+kPPV-ART |  6-plis strat. x10 |    60 |  99.86% |      0.44% |  98.61% - 100.00% | 0.7
+kPPV-ART |  4-plis strat. x10 |    54 |  99.72% |      0.59% |  98.61% - 100.00% | 0.6
+kPPV-ART |  3-plis strat. x10 |    48 |  99.86% |      0.44% |  98.61% - 100.00% | 0.5
+kPPV-ART |  2-plis strat. x10 |    36 |  99.17% |      0.72% |  98.61% - 100.00% | 0.4
+kPPV-ZRK |              LOOCV |    71 | 100.00% |      0.00% | 100.00% - 100.00% | 1.4
+kPPV-ZRK | 12-plis strat. x10 |    66 | 100.00% |      0.00% | 100.00% - 100.00% | 1.0
+kPPV-ZRK |  6-plis strat. x10 |    60 |  99.86% |      0.44% |  98.61% - 100.00% | 0.6
+kPPV-ZRK |  4-plis strat. x10 |    54 |  99.72% |      0.59% |  98.61% - 100.00% | 0.5
+kPPV-ZRK |  3-plis strat. x10 |    48 |  99.72% |      0.59% |  98.61% - 100.00% | 0.5
+kPPV-ZRK |  2-plis strat. x10 |    36 |  99.44% |      0.72% |  98.61% - 100.00% | 0.3
+kPPV-GFD |              LOOCV |    71 | 100.00% |      0.00% | 100.00% - 100.00% | 1.7
+kPPV-GFD | 12-plis strat. x10 |    66 | 100.00% |      0.00% | 100.00% - 100.00% | 1.0
+kPPV-GFD |  6-plis strat. x10 |    60 |  99.86% |      0.44% |  98.61% - 100.00% | 0.8
+kPPV-GFD |  4-plis strat. x10 |    54 |  99.72% |      0.59% |  98.61% - 100.00% | 0.7
+kPPV-GFD |  3-plis strat. x10 |    48 |  99.86% |      0.44% |  98.61% - 100.00% | 0.6
+kPPV-GFD |  2-plis strat. x10 |    36 |  98.89% |      0.88% |  97.22% - 100.00% | 0.5
+kPPV-YNG |              LOOCV |    71 |  98.61% |      0.00% |   98.61% - 98.61% | 1.7
+kPPV-YNG | 12-plis strat. x10 |    66 |  97.92% |      0.98% |  97.22% - 100.00% | 0.7
+kPPV-YNG |  6-plis strat. x10 |    60 |  98.33% |      0.88% |  97.22% - 100.00% | 0.5
+kPPV-YNG |  4-plis strat. x10 |    54 |  98.33% |      0.88% |  97.22% - 100.00% | 0.5
+kPPV-YNG |  3-plis strat. x10 |    48 |  98.47% |      0.79% |  97.22% - 100.00% | 0.4
+kPPV-YNG |  2-plis strat. x10 |    36 |  97.64% |      0.67% |   97.22% - 98.61% | 0.3
+kPPV-SA  |              LOOCV |    71 |  83.33% |      0.00% |   83.33% - 83.33% | 1.3
+kPPV-SA  | 12-plis strat. x10 |    66 |  84.03% |      0.73% |   83.33% - 84.72% | 0.9
+kPPV-SA  |  6-plis strat. x10 |    60 |  84.31% |      1.47% |   81.94% - 86.11% | 0.5
+kPPV-SA  |  4-plis strat. x10 |    54 |  82.36% |      2.78% |   76.39% - 84.72% | 0.4
+kPPV-SA  |  3-plis strat. x10 |    48 |  82.22% |      2.99% |   77.78% - 86.11% | 0.4
+kPPV-SA  |  2-plis strat. x10 |    36 |  82.64% |      3.94% |   76.39% - 88.89% | 0.3
+
+==============================================================================
+  2.b  Nuees dynamiques (k-means), k = nombre de classes, 30 initialisations
+==============================================================================
+
+--- 6 classes (72 echantillons) ---
+Exemple : matrice de confusion ART (sans normalisation, k-means++), groupes -> classes [1, 5, 2, 4, 6, 3]
+verite\estimee |  S01 |  S02 |  S03 |  S04 |  S05 |  S06 |    R_i
+---------------+------+------+------+------+------+------+-------
+S01            |   11 |    . |    . |    . |    1 |    . | 0.9167
+S02            |    . |   12 |    . |    . |    . |    . | 1.0000
+S03            |    . |    . |   12 |    . |    . |    . | 1.0000
+S04            |    . |    . |    . |   12 |    . |    . | 1.0000
+S05            |    . |    . |    . |    . |   12 |    . | 1.0000
+S06            |    . |    . |    . |    . |    . |   12 | 1.0000
+P_i            | 1.00 | 1.00 | 1.00 | 1.00 | 0.92 | 1.00 |       
+T_reco = 98.61%   T_conf = 1.39%   P_macro = 0.9872   R_macro = 0.9861   F1_macro = 0.9861
+representation |  norm. |            init. |         J | iter | T_reco(hongrois) | purete | F1_macro | ms
+---------------+--------+------------------+-----------+------+------------------+--------+----------+---
+ART            | aucune |        aleatoire |     1.362 |    9 |           98.61% | 98.61% |   0.9861 | 13
+ART            | aucune | kmeans_plus_plus |     1.362 |    3 |           98.61% | 98.61% |   0.9861 |  4
+ART            | zscore |        aleatoire |     717.2 |    8 |           77.78% | 81.94% |   0.7401 |  4
+ART            | zscore | kmeans_plus_plus |     717.2 |    6 |           77.78% | 81.94% |   0.7401 |  4
+ZRK            | aucune |        aleatoire | 4.115e+08 |    8 |           97.22% | 97.22% |   0.9727 |  2
+ZRK            | aucune | kmeans_plus_plus | 4.115e+08 |    4 |           97.22% | 97.22% |   0.9727 |  2
+ZRK            | zscore |        aleatoire |     267.4 |    4 |           95.83% | 95.83% |   0.9581 |  3
+ZRK            | zscore | kmeans_plus_plus |     268.6 |    3 |           94.44% | 94.44% |   0.9447 |  2
+GFD            | aucune |        aleatoire |     1.988 |    8 |           97.22% | 97.22% |   0.9727 |  9
+GFD            | aucune | kmeans_plus_plus |     1.988 |    3 |           97.22% | 97.22% |   0.9727 |  8
+GFD            | zscore |        aleatoire |      3229 |    6 |           61.11% | 66.67% |   0.5222 |  9
+GFD            | zscore | kmeans_plus_plus |      3156 |    5 |           62.50% | 66.67% |   0.5381 | 10
+YNG            | aucune |        aleatoire |   0.06885 |   11 |           73.61% | 79.17% |   0.7143 |  4
+YNG            | aucune | kmeans_plus_plus |   0.06885 |    5 |           73.61% | 79.17% |   0.7143 |  4
+YNG            | zscore |        aleatoire |     173.9 |    4 |           95.83% | 95.83% |   0.9581 |  4
+YNG            | zscore | kmeans_plus_plus |     173.9 |    3 |           95.83% | 95.83% |   0.9581 |  4
+SA             | aucune |        aleatoire |    0.2367 |    6 |           61.11% | 65.28% |   0.5654 |  4
+SA             | aucune | kmeans_plus_plus |    0.1934 |    4 |           45.83% | 54.17% |   0.3753 |  3
+SA             | zscore |        aleatoire |     458.5 |    5 |           48.61% | 56.94% |   0.4140 |  3
+SA             | zscore | kmeans_plus_plus |     454.9 |    8 |           40.28% | 47.22% |   0.3819 |  3
+CONCAT         | aucune |        aleatoire | 4.115e+08 |    8 |           97.22% | 97.22% |   0.9727 | 17
+CONCAT         | aucune | kmeans_plus_plus | 4.115e+08 |    4 |           97.22% | 97.22% |   0.9727 | 17
+CONCAT         | zscore |        aleatoire |     115.5 |    5 |           98.61% | 98.61% |   0.9861 | 18
+CONCAT         | zscore | kmeans_plus_plus |     115.5 |    6 |           98.61% | 98.61% |   0.9861 | 17
+
+--- 12 classes (144 echantillons) ---
+representation |  norm. |            init. |         J | iter | T_reco(hongrois) | purete | F1_macro | ms
+---------------+--------+------------------+-----------+------+------------------+--------+----------+---
+ART            | aucune |        aleatoire |     2.863 |    7 |           82.64% | 86.11% |   0.8117 | 13
+ART            | aucune | kmeans_plus_plus |     3.045 |    5 |           77.78% | 81.25% |   0.7333 | 10
+ART            | zscore |        aleatoire |      1002 |    6 |           77.78% | 81.25% |   0.7463 | 10
+ART            | zscore | kmeans_plus_plus |     940.6 |    6 |           78.47% | 81.94% |   0.7435 | 12
+ZRK            | aucune |        aleatoire | 7.956e+08 |    8 |           84.72% | 86.81% |   0.8227 |  7
+ZRK            | aucune | kmeans_plus_plus | 7.898e+08 |   10 |           74.31% | 79.17% |   0.7020 |  8
+ZRK            | zscore |        aleatoire |     401.4 |    6 |           82.64% | 86.11% |   0.8105 |  7
+ZRK            | zscore | kmeans_plus_plus |     385.5 |   10 |           86.11% | 88.89% |   0.8430 |  7
+GFD            | aucune |        aleatoire |     4.025 |    7 |           83.33% | 86.11% |   0.8145 | 33
+GFD            | aucune | kmeans_plus_plus |     4.117 |    8 |           78.47% | 82.64% |   0.7401 | 28
+GFD            | zscore |        aleatoire |      6426 |   10 |           81.94% | 82.64% |   0.8125 | 28
+GFD            | zscore | kmeans_plus_plus |      6128 |    6 |           66.67% | 70.14% |   0.5964 | 29
+YNG            | aucune |        aleatoire |   0.09675 |    4 |           67.36% | 70.14% |   0.6649 |  8
+YNG            | aucune | kmeans_plus_plus |   0.09374 |    5 |           71.53% | 74.31% |   0.7029 |  8
+YNG            | zscore |        aleatoire |     359.5 |    9 |           73.61% | 76.39% |   0.7171 |  8
+YNG            | zscore | kmeans_plus_plus |     346.1 |    6 |           73.61% | 77.78% |   0.7313 |  8
+SA             | aucune |        aleatoire |    0.2595 |    9 |           63.89% | 68.06% |   0.5930 |  6
+SA             | aucune | kmeans_plus_plus |    0.2586 |    8 |           64.58% | 68.75% |   0.6029 |  5
+SA             | zscore |        aleatoire |     658.9 |   11 |           49.31% | 54.86% |   0.4589 |  7
+SA             | zscore | kmeans_plus_plus |     615.4 |   10 |           43.06% | 50.69% |   0.3952 |  8
+CONCAT         | aucune |        aleatoire | 7.956e+08 |    8 |           84.72% | 86.81% |   0.8227 | 70
+CONCAT         | aucune | kmeans_plus_plus | 7.898e+08 |   10 |           74.31% | 79.17% |   0.7020 | 78
+CONCAT         | zscore |        aleatoire |     197.5 |    6 |           81.94% | 84.03% |   0.7896 | 64
+CONCAT         | zscore | kmeans_plus_plus |     195.3 |    6 |           84.72% | 86.81% |   0.8237 | 62
+
+--- 18 classes (216 echantillons) ---
+representation |  norm. |            init. |         J | iter | T_reco(hongrois) | purete | F1_macro |  ms
+---------------+--------+------------------+-----------+------+------------------+--------+----------+----
+ART            | aucune |        aleatoire |     4.145 |    8 |           78.70% | 80.56% |   0.7732 |  27
+ART            | aucune | kmeans_plus_plus |     4.065 |    9 |           77.31% | 78.70% |   0.7567 |  25
+ART            | zscore |        aleatoire |      1262 |    6 |           75.46% | 77.78% |   0.7200 |  24
+ART            | zscore | kmeans_plus_plus |      1174 |   14 |           65.28% | 69.91% |   0.6136 |  24
+ZRK            | aucune |        aleatoire | 1.105e+09 |   12 |           79.63% | 81.48% |   0.7736 |  13
+ZRK            | aucune | kmeans_plus_plus | 1.055e+09 |    8 |           70.83% | 76.85% |   0.6675 |  13
+ZRK            | zscore |        aleatoire |     511.7 |   10 |           82.41% | 84.72% |   0.7932 |  12
+ZRK            | zscore | kmeans_plus_plus |     472.0 |    5 |           71.30% | 75.93% |   0.6793 |  11
+GFD            | aucune |        aleatoire |     6.173 |    7 |           84.26% | 86.11% |   0.8321 |  68
+GFD            | aucune | kmeans_plus_plus |     6.038 |    4 |           75.46% | 80.56% |   0.7168 |  71
+GFD            | zscore |        aleatoire |      8437 |   11 |           66.20% | 70.37% |   0.6288 |  70
+GFD            | zscore | kmeans_plus_plus |      8123 |    7 |           58.33% | 62.50% |   0.5152 |  81
+YNG            | aucune |        aleatoire |    0.1510 |   10 |           54.17% | 57.41% |   0.5351 |  28
+YNG            | aucune | kmeans_plus_plus |    0.1491 |    9 |           56.48% | 61.57% |   0.5386 |  22
+YNG            | zscore |        aleatoire |     576.7 |   10 |           60.65% | 65.28% |   0.5870 |  23
+YNG            | zscore | kmeans_plus_plus |     564.8 |   11 |           63.89% | 67.59% |   0.6226 |  24
+SA             | aucune |        aleatoire |    0.4165 |   10 |           49.07% | 54.17% |   0.4475 |  16
+SA             | aucune | kmeans_plus_plus |    0.3531 |    9 |           47.22% | 53.70% |   0.4261 |  16
+SA             | zscore |        aleatoire |     994.7 |   12 |           45.37% | 49.54% |   0.4329 |  19
+SA             | zscore | kmeans_plus_plus |     925.0 |    8 |           39.81% | 44.91% |   0.3468 |  18
+CONCAT         | aucune |        aleatoire | 1.105e+09 |   12 |           79.63% | 81.48% |   0.7736 | 169
+CONCAT         | aucune | kmeans_plus_plus | 1.055e+09 |    8 |           70.83% | 76.85% |   0.6675 | 181
+CONCAT         | zscore |        aleatoire |     290.0 |   10 |           75.46% | 78.70% |   0.7278 | 180
+CONCAT         | zscore | kmeans_plus_plus |     283.8 |    6 |           65.28% | 70.83% |   0.5849 | 164
+
+=========================================================
+  2.c  Vote majoritaire (5 methodes) - 6 classes, LOOCV
+=========================================================
+Classifieurs de base : {ART=k=1,L1,AUCUNE, ZRK=k=1,L1,AUCUNE, GFD=k=1,L1,AUCUNE, YNG=k=1,L1,ZSCORE, SA=k=1,L1,AUCUNE}
+
+--- VoteSimple ---
+verite\estimee |  S01 |  S02 |  S03 |  S04 |  S05 |  S06 |    R_i
+---------------+------+------+------+------+------+------+-------
+S01            |   12 |    . |    . |    . |    . |    . | 1.0000
+S02            |    . |   12 |    . |    . |    . |    . | 1.0000
+S03            |    . |    . |   12 |    . |    . |    . | 1.0000
+S04            |    . |    . |    . |   12 |    . |    . | 1.0000
+S05            |    . |    . |    . |    . |   12 |    . | 1.0000
+S06            |    . |    . |    . |    . |    . |   12 | 1.0000
+P_i            | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |       
+T_reco = 100.00%   T_conf = 0.00%   P_macro = 1.0000   R_macro = 1.0000   F1_macro = 1.0000
+
+--- VotePondere ---
+verite\estimee |  S01 |  S02 |  S03 |  S04 |  S05 |  S06 |    R_i
+---------------+------+------+------+------+------+------+-------
+S01            |   12 |    . |    . |    . |    . |    . | 1.0000
+S02            |    . |   12 |    . |    . |    . |    . | 1.0000
+S03            |    . |    . |   12 |    . |    . |    . | 1.0000
+S04            |    . |    . |    . |   12 |    . |    . | 1.0000
+S05            |    . |    . |    . |    . |   12 |    . | 1.0000
+S06            |    . |    . |    . |    . |    . |   12 | 1.0000
+P_i            | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |       
+T_reco = 100.00%   T_conf = 0.00%   P_macro = 1.0000   R_macro = 1.0000   F1_macro = 1.0000
+
+--- Poids w_j (taux LOO individuels sur les 72 echantillons) ---
+  ART : 100.00%
+  ZRK : 100.00%
+  GFD : 100.00%
+  YNG : 97.22%
+  SA : 83.33%
+
+--- Vote pondere, 6 classes : nombre de methodes correctes par echantillon (LOOCV) ---
+  0/5 methodes correctes :   0 echantillons
+  1/5 methodes correctes :   0 echantillons
+  2/5 methodes correctes :   0 echantillons
+  3/5 methodes correctes :   1 echantillons
+  4/5 methodes correctes :  11 echantillons
+  5/5 methodes correctes :  60 echantillons
+  Situations d'egalite : 0 (dont 0 correctement resolues)
+  Vote correct malgre une minorite de methodes correctes : 0 ; vote faux alors qu'au moins une methode avait raison : 0
+
+--- Vote pondere, 12 classes : nombre de methodes correctes par echantillon (LOOCV) ---
+  0/5 methodes correctes :   1 echantillons
+  1/5 methodes correctes :   1 echantillons
+  2/5 methodes correctes :   3 echantillons
+  3/5 methodes correctes :   4 echantillons
+  4/5 methodes correctes :  33 echantillons
+  5/5 methodes correctes : 102 echantillons
+  Situations d'egalite : 0 (dont 0 correctement resolues)
+  Vote correct malgre une minorite de methodes correctes : 1 ; vote faux alors qu'au moins une methode avait raison : 3
+
+--- Vote pondere, 18 classes : nombre de methodes correctes par echantillon (LOOCV) ---
+  0/5 methodes correctes :   2 echantillons
+  1/5 methodes correctes :   6 echantillons
+  2/5 methodes correctes :   2 echantillons
+  3/5 methodes correctes :  18 echantillons
+  4/5 methodes correctes :  64 echantillons
+  5/5 methodes correctes : 124 echantillons
+  Situations d'egalite : 0 (dont 0 correctement resolues)
+  Vote correct malgre une minorite de methodes correctes : 2 ; vote faux alors qu'au moins une methode avait raison : 6
+
+--- Influence du protocole de decoupage (vote pondere) ---
+approche    |          protocole | n_app |  T_reco | ecart-type |         min - max |    ms
+------------+--------------------+-------+---------+------------+-------------------+------
+VotePondere |              LOOCV |    71 | 100.00% |      0.00% | 100.00% - 100.00% | 211.2
+VotePondere | 12-plis strat. x10 |    66 | 100.00% |      0.00% | 100.00% - 100.00% |  32.8
+VotePondere |  6-plis strat. x10 |    60 |  99.86% |      0.44% |  98.61% - 100.00% |  14.6
+VotePondere |  4-plis strat. x10 |    54 |  99.72% |      0.59% |  98.61% - 100.00% |   8.7
+VotePondere |  3-plis strat. x10 |    48 |  99.86% |      0.44% |  98.61% - 100.00% |   5.8
+VotePondere |  2-plis strat. x10 |    36 |  99.44% |      0.72% |  98.61% - 100.00% |   2.8
+
+===================================================
+  3.c  Courbes precision / rappel (K = 12) et AUC
+===================================================
+
+--- Mode recherche - 6 classes : precision P_i (rappel R_i) ---
+i   |      kPPV-ART |      kPPV-ZRK |      kPPV-GFD |      kPPV-YNG |       kPPV-SA |          Vote
+----+---------------+---------------+---------------+---------------+---------------+--------------
+1   | 1.000 (0.083) | 1.000 (0.083) | 1.000 (0.083) | 1.000 (0.083) | 1.000 (0.083) | 1.000 (0.083)
+2   | 1.000 (0.167) | 1.000 (0.167) | 1.000 (0.167) | 0.986 (0.164) | 0.917 (0.153) | 0.993 (0.166)
+3   | 0.995 (0.249) | 0.991 (0.248) | 0.995 (0.249) | 0.986 (0.247) | 0.880 (0.220) | 0.991 (0.248)
+4   | 0.993 (0.331) | 0.986 (0.329) | 0.990 (0.330) | 0.979 (0.326) | 0.833 (0.278) | 0.990 (0.330)
+5   | 0.992 (0.413) | 0.989 (0.412) | 0.989 (0.412) | 0.981 (0.409) | 0.800 (0.333) | 0.989 (0.412)
+6   | 0.988 (0.494) | 0.986 (0.493) | 0.981 (0.491) | 0.972 (0.486) | 0.782 (0.391) | 0.988 (0.494)
+7   | 0.984 (0.574) | 0.982 (0.573) | 0.976 (0.569) | 0.962 (0.561) | 0.768 (0.448) | 0.984 (0.574)
+8   | 0.979 (0.653) | 0.977 (0.652) | 0.969 (0.646) | 0.960 (0.640) | 0.753 (0.502) | 0.983 (0.655)
+9   | 0.974 (0.730) | 0.971 (0.728) | 0.965 (0.723) | 0.949 (0.712) | 0.736 (0.552) | 0.978 (0.734)
+10  | 0.971 (0.809) | 0.964 (0.803) | 0.954 (0.795) | 0.944 (0.787) | 0.700 (0.583) | 0.976 (0.814)
+11  | 0.963 (0.883) | 0.957 (0.877) | 0.942 (0.863) | 0.931 (0.853) | 0.674 (0.618) | 0.971 (0.890)
+12  | 0.955 (0.955) | 0.944 (0.944) | 0.920 (0.920) | 0.891 (0.891) | 0.645 (0.645) | 0.959 (0.959)
+AUC |        0.9408 |        0.9275 |        0.9006 |        0.8643 |        0.5372 |        0.9457
+
+--- Mode scores de classe (LOOCV) - 6 classes : precision P_i (rappel R_i) ---
+i   |      kPPV-ART |      kPPV-ZRK |      kPPV-GFD |      kPPV-YNG |       kPPV-SA |          Vote
+----+---------------+---------------+---------------+---------------+---------------+--------------
+1   | 1.000 (0.083) | 1.000 (0.083) | 1.000 (0.083) | 1.000 (0.083) | 1.000 (0.083) | 1.000 (0.083)
+2   | 1.000 (0.167) | 1.000 (0.167) | 1.000 (0.167) | 1.000 (0.167) | 1.000 (0.167) | 1.000 (0.167)
+3   | 1.000 (0.250) | 1.000 (0.250) | 1.000 (0.250) | 1.000 (0.250) | 0.944 (0.236) | 1.000 (0.250)
+4   | 1.000 (0.333) | 1.000 (0.333) | 1.000 (0.333) | 1.000 (0.333) | 0.958 (0.319) | 1.000 (0.333)
+5   | 1.000 (0.417) | 1.000 (0.417) | 1.000 (0.417) | 1.000 (0.417) | 0.933 (0.389) | 1.000 (0.417)
+6   | 1.000 (0.500) | 1.000 (0.500) | 1.000 (0.500) | 1.000 (0.500) | 0.944 (0.472) | 1.000 (0.500)
+7   | 1.000 (0.583) | 1.000 (0.583) | 1.000 (0.583) | 1.000 (0.583) | 0.929 (0.542) | 1.000 (0.583)
+8   | 1.000 (0.667) | 1.000 (0.667) | 1.000 (0.667) | 1.000 (0.667) | 0.938 (0.625) | 1.000 (0.667)
+9   | 1.000 (0.750) | 1.000 (0.750) | 1.000 (0.750) | 1.000 (0.750) | 0.889 (0.667) | 1.000 (0.750)
+10  | 1.000 (0.833) | 1.000 (0.833) | 1.000 (0.833) | 1.000 (0.833) | 0.867 (0.722) | 1.000 (0.833)
+11  | 1.000 (0.917) | 1.000 (0.917) | 1.000 (0.917) | 1.000 (0.917) | 0.879 (0.806) | 1.000 (0.917)
+12  | 1.000 (1.000) | 1.000 (1.000) | 1.000 (1.000) | 0.972 (0.972) | 0.847 (0.847) | 1.000 (1.000)
+AUC |        1.0000 |        1.0000 |        1.0000 |        0.9715 |        0.7957 |        1.0000
+
+--- AUC (K = 12) ---
+mode      | approche | AUC 6cl | AUC 12cl | AUC 18cl
+----------+----------+---------+----------+---------
+recherche | kPPV-ART |  0.9408 |   0.8299 |   0.7077
+recherche | kPPV-ZRK |  0.9275 |   0.8052 |   0.7293
+recherche | kPPV-GFD |  0.9006 |   0.7902 |   0.7578
+recherche | kPPV-YNG |  0.8643 |   0.6604 |   0.5182
+recherche |  kPPV-SA |  0.5372 |   0.4961 |   0.3526
+recherche |     Vote |  0.9457 |   0.8626 |   0.7897
+scores    | kPPV-ART |  1.0000 |   0.9386 |   0.8932
+scores    | kPPV-ZRK |  1.0000 |   0.9850 |   0.9098
+scores    | kPPV-GFD |  1.0000 |   0.9497 |   0.9410
+scores    | kPPV-YNG |  0.9715 |   0.8973 |   0.8258
+scores    |  kPPV-SA |  0.7957 |   0.5466 |   0.4120
+scores    |     Vote |  1.0000 |   0.9928 |   0.9706
+
+=========================================================================
+  4.b  Comparaison 6 / 12 / 18 classes (taux de reconnaissance globaux)
+=========================================================================
+[kPPV-ART [k=1,L1,AUCUNE]]  6 classes : T_reco LOOCV = 100.00% (1.0 ms)
+[kPPV-ART [k=1,L1,AUCUNE]] 12 classes : T_reco LOOCV = 97.22% (4.1 ms)
+[kPPV-ART [k=1,L1,AUCUNE]] 18 classes : T_reco LOOCV = 93.06% (9.9 ms)
+[kPPV-ZRK [k=1,L1,AUCUNE]]  6 classes : T_reco LOOCV = 100.00% (0.9 ms)
+[kPPV-ZRK [k=1,L1,AUCUNE]] 12 classes : T_reco LOOCV = 97.22% (3.7 ms)
+[kPPV-ZRK [k=1,L1,AUCUNE]] 18 classes : T_reco LOOCV = 93.06% (9.6 ms)
+[kPPV-GFD [k=1,L1,AUCUNE]]  6 classes : T_reco LOOCV = 100.00% (1.3 ms)
+[kPPV-GFD [k=1,L1,AUCUNE]] 12 classes : T_reco LOOCV = 95.14% (5.5 ms)
+[kPPV-GFD [k=1,L1,AUCUNE]] 18 classes : T_reco LOOCV = 95.37% (13.4 ms)
+[kPPV-YNG [k=1,L1,ZSCORE]]  6 classes : T_reco LOOCV = 98.61% (1.2 ms)
+[kPPV-YNG [k=1,L1,ZSCORE]] 12 classes : T_reco LOOCV = 93.75% (5.1 ms)
+[kPPV-YNG [k=1,L1,ZSCORE]] 18 classes : T_reco LOOCV = 87.96% (13.2 ms)
+[kPPV-SA [k=1,L1,AUCUNE]]  6 classes : T_reco LOOCV = 83.33% (1.0 ms)
+[kPPV-SA [k=1,L1,AUCUNE]] 12 classes : T_reco LOOCV = 75.69% (4.0 ms)
+[kPPV-SA [k=1,L1,AUCUNE]] 18 classes : T_reco LOOCV = 65.74% (10.3 ms)
+[VoteSimple]  6 classes : T_reco LOOCV = 100.00% (5.9 ms)
+[VoteSimple] 12 classes : T_reco LOOCV = 97.22% (23.5 ms)
+[VoteSimple] 18 classes : T_reco LOOCV = 96.30% (58.1 ms)
+[VotePondere]  6 classes : T_reco LOOCV = 100.00% (227.3 ms)
+[VotePondere] 12 classes : T_reco LOOCV = 97.22% (2108.6 ms)
+[VotePondere] 18 classes : T_reco LOOCV = 96.30% (7986.6 ms)
+
+--- T_reco  LOOCV / 12-plis stratifies   (temps LOOCV en ms : 6 / 12 / 18 classes) ---
+approche                 |         6 classes |      12 classes |      18 classes |          ms LOOCV
+-------------------------+-------------------+-----------------+-----------------+------------------
+kPPV-ART [k=1,L1,AUCUNE] | 100.00% / 100.00% | 97.22% / 97.22% | 93.06% / 93.06% |        1 / 4 / 10
+kPPV-ZRK [k=1,L1,AUCUNE] | 100.00% / 100.00% | 97.22% / 97.22% | 93.06% / 93.06% |        1 / 4 / 10
+kPPV-GFD [k=1,L1,AUCUNE] | 100.00% / 100.00% | 95.14% / 95.14% | 95.37% / 95.37% |        1 / 5 / 13
+kPPV-YNG [k=1,L1,ZSCORE] |   98.61% / 97.22% | 93.75% / 93.75% | 87.96% / 87.96% |        1 / 5 / 13
+kPPV-SA [k=1,L1,AUCUNE]  |   83.33% / 83.33% | 75.69% / 79.17% | 65.74% / 67.59% |        1 / 4 / 10
+VoteSimple               | 100.00% / 100.00% | 97.22% / 97.92% | 96.30% / 96.30% |       6 / 24 / 58
+VotePondere              | 100.00% / 100.00% | 97.22% / 97.92% | 96.30% / 96.30% | 227 / 2109 / 7987
+
+Duree totale : 36.4 s. Resultats CSV dans I:\rep_forme\ProjetRF\results
